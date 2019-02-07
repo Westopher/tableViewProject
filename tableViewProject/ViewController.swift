@@ -12,7 +12,8 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = "hello world"
+        cell.textLabel?.text = "Cell displayed \(indexPath.row)"
+        
         
         return cell
     }
