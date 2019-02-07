@@ -10,16 +10,17 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
     
+    let fruit = ["Apple", "Banana", "Pear", "Orange", "Mango", "Cherry", "Grape"]
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = "Cell displayed \(indexPath.row)"
-        
-        
+        cell.textLabel?.text = fruit[indexPath.row]
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        return fruit.count
     }
     
    
