@@ -14,9 +14,14 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     let headerText = ["Fruits", "Vegatables"]
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return headerText[section]
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return fruit.count
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return fruit[section].count
     }
