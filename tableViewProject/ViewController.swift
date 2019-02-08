@@ -10,19 +10,23 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
     
-    let fruit = ["Apple", "Banana", "Pear", "Orange", "Mango", "Cherry", "Grape"]
+    let fruit = [["Apple", "Banana", "Pear", "Orange", "Mango", "Cherry", "Grape"], ["Carrot", "Potato", "Squash", "Celery", "Green Beans"]]
     
+    let headerText = ["Fruits", "Vegatables"]
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return fruit.count
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return fruit[section].count
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = fruit[indexPath.row]
+        cell.textLabel?.text = fruit[indexPath.section][indexPath.row]
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return fruit.count
-    }
-    
+   
    
     
 
