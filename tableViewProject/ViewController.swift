@@ -10,9 +10,9 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
     
-    let fruit = [["Apple", "Banana", "Pear", "Orange", "Mango", "Cherry", "Grape"], ["Carrot", "Potato", "Squash", "Celery", "Green Beans"]]
+    let fruit = [["Apple", "Banana", "Pear", "Orange", "Mango", "Cherry", "Grape"], ["Carrot", "Potato", "Squash", "Celery", "Green Beans"], ["Pork", "Chicken", "Beef", "Vegan Nonsense"]]
     
-    let headerText = ["Fruits", "Vegatables"]
+    let headerText = ["Fruits", "Vegatables", "Meats"]
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return headerText[section]
