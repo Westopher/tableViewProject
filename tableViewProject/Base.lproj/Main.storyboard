@@ -33,6 +33,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="JQ3-yK-iZD" id="aSg-p4-xhX"/>
+                                    <outlet property="delegate" destination="JQ3-yK-iZD" id="F6y-x0-xyI"/>
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0X-HW-VJ3">

@@ -47,5 +47,10 @@ class MultipleSectionsVC: UIViewController {
         cell.textLabel?.text = fruit[indexPath.section][indexPath.row]
         return cell
     }
-    }
+}
 
+extension MultipleSectionsVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("selected row: \(indexPath.row)")
+    }
+}
