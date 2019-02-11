@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MultipleSectionsVC: UIViewController, UITableViewDataSource {
+class MultipleSectionsVC: UIViewController {
     
     var fruit = [["Apple", "Banana", "Pear", "Orange", "Mango", "Cherry", "Grape"], ["Carrot", "Potato", "Squash", "Celery", "Green Beans"], ["Pork", "Chicken", "Beef", "Vegan Nonsense"]]
     
@@ -26,6 +26,9 @@ class MultipleSectionsVC: UIViewController, UITableViewDataSource {
             
         }
     }
+}
+    
+    extension MultipleSectionsVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return headerText[section]
@@ -44,6 +47,5 @@ class MultipleSectionsVC: UIViewController, UITableViewDataSource {
         cell.textLabel?.text = fruit[indexPath.section][indexPath.row]
         return cell
     }
+    }
 
-    
-}
