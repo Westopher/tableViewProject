@@ -18,7 +18,7 @@ class MultipleSectionsVC: UIViewController, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return headerText[section]
+        return headerText[section].lowercased()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
