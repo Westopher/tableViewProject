@@ -10,14 +10,18 @@ import UIKit
 
 class MultipleSectionsVC: UIViewController, UITableViewDataSource {
     
-    let fruit = [["Apple", "Banana", "Pear", "Orange", "Mango", "Cherry", "Grape"], ["Carrot", "Potato", "Squash", "Celery", "Green Beans"], ["Pork", "Chicken", "Beef", "Vegan Nonsense"]]
+    var fruit = [["Apple", "Banana", "Pear", "Orange", "Mango", "Cherry", "Grape"], ["Carrot", "Potato", "Squash", "Celery", "Green Beans"], ["Pork", "Chicken", "Beef", "Vegan Nonsense"]]
     
     let headerText = ["Fruits", "Veggies", "Meats"]
     
     @IBOutlet weak var tableView: UITableView!
     
     @IBAction func sortArray(_ sender: UIButton) {
-        
+        print(fruit[0])
+        var fruitCount = fruit.count
+        fruit[0...fruitCount].sort
+        tableView.reloadData
+        print(fruit[0])
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
