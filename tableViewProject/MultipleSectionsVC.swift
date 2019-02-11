@@ -16,9 +16,12 @@ class MultipleSectionsVC: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBAction func sortArray(_ sender: UIButton) {
+        
+    }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return headerText[section].lowercased()
+        return headerText[section]
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

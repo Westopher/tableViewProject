@@ -42,6 +42,9 @@
                                 <state key="normal" title="Sort Lists">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="sortArray:" destination="JQ3-yK-iZD" eventType="touchUpInside" id="pxr-Yc-nZp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
