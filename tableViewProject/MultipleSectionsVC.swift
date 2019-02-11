@@ -17,11 +17,14 @@ class MultipleSectionsVC: UIViewController, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
     @IBAction func sortArray(_ sender: UIButton) {
-        print(fruit[0])
-        var fruitCount = fruit.count
-        fruit[0...fruitCount].sort
-        tableView.reloadData
-        print(fruit[0])
+        fruit[0].sort()
+        tableView.reloadData()
+        
+        for indexPath in fruit.indices {
+            
+            fruit[indexPath] = fruit[indexPath].sorted().reversed()
+            
+        }
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
