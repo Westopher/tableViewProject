@@ -55,6 +55,21 @@ class MultipleSectionsVC: UIViewController {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = countryList[indexPath.row]
+        
+        switch indexPath.row {
+        case 0:
+            cell.accessoryType = .checkmark
+        case 1:
+            cell.accessoryType = .detailButton
+        case 2:
+            cell.accessoryType = .detailDisclosureButton
+        case 3:
+            cell.accessoryType = .disclosureIndicator
+        case 4:
+            cell.accessoryType = .none
+        default:
+            break
+        }
         return cell
     }
 }
