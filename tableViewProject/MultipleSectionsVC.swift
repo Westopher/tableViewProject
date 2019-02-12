@@ -50,6 +50,7 @@ class MultipleSectionsVC: UIViewController {
 extension MultipleSectionsVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("selected row: \(indexPath.row)")
+        performSegue(withIdentifier: "segue1", sender: nil)
     }
 }
 

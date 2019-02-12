@@ -62,11 +62,39 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="68v-MM-GmL" id="7JV-Cd-Y2x"/>
+                        <segue destination="G7c-Te-NmT" kind="show" identifier="segue1" id="gtZ-2Z-vdZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4tU-Td-ILR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1781.5999999999999" y="682.3088455772114"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="a4I-0C-Tc7">
+            <objects>
+                <viewController id="G7c-Te-NmT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bb1-N2-q68">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😎" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxq-Xe-ZkX">
+                                <rect key="frame" x="133.5" y="274" width="108" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xxq-Xe-ZkX" firstAttribute="centerY" secondItem="Bb1-N2-q68" secondAttribute="centerY" id="JVA-DZ-4tC"/>
+                            <constraint firstItem="xxq-Xe-ZkX" firstAttribute="centerX" secondItem="Bb1-N2-q68" secondAttribute="centerX" id="fe6-NU-CS9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QK5-r2-4Xh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vtg-4q-h4C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2556" y="688.60569715142435"/>
         </scene>
     </scenes>
 </document>
