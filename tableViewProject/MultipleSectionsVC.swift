@@ -21,9 +21,7 @@ class MultipleSectionsVC: UIViewController {
         tableView.reloadData()
         
         for indexPath in fruit.indices {
-            
             fruit[indexPath] = fruit[indexPath].sorted().reversed()
-            
         }
     }
 }
@@ -54,3 +52,6 @@ extension MultipleSectionsVC: UITableViewDelegate {
         print("selected row: \(indexPath.row)")
     }
 }
+
+
+
